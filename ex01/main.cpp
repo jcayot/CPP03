@@ -16,12 +16,11 @@ int main()
 	trap2.guardGate();
 
 	std::cout << "\nCreating copy using copy constructor..." << std::endl;
-	ScavTrap trap3 = trap2;
+	ScavTrap trap3(trap2);
 	trap3.guardGate();
 
 	std::cout << "\nAssigning using assignment operator..." << std::endl;
-	ScavTrap trap4;
-	trap4 = trap2;
+	ScavTrap trap4 = trap2;
 	trap4.guardGate();
 
 	std::cout << "\nEnd of Test!" << std::endl;

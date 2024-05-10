@@ -17,8 +17,8 @@ ClapTrap::ClapTrap(const std::string &name) {
 }
 
 ClapTrap::ClapTrap(const ClapTrap &clapTrap) {
-	std::cout << "ClapTrap " << name << " copy constructor called" << std::endl;
 	*this = clapTrap;
+	std::cout << "ClapTrap " << name << " copy constructor called" << std::endl;
 }
 
 ClapTrap::~ClapTrap() {
