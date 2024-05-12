@@ -2,22 +2,17 @@
 // Created by jules on 10/05/2024.
 //
 
-#include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
 
-int main()
-{
-	// Creating instance A
-	FragTrap a("A");
-	a.highFivesGuys();   // Expect: "FragTrap A says high five!"
+int main() {
+	// Create a DiamondTrap named DiamondTest
+	DiamondTrap dt("DiamondTest");
 
-	// Creating instance B and assigning it to A
-	FragTrap b("B");
-	a = b;
-	a.highFivesGuys();   // Expect: "FragTrap B says high five!"
+	// Have the DiamondTrap attack a target
+	dt.attack("Target");
 
-	// Creating instance C from copy constructor
-	FragTrap c(a);
-	c.highFivesGuys();   // Expect: "FragTrap B says high five!"
+	// Display the DiamondTrap's identity
+	dt.whoAmI();
 
 	return 0;
 }

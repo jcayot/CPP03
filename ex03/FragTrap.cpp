@@ -31,3 +31,11 @@ FragTrap &FragTrap::operator=(const FragTrap &other) {
 void FragTrap::highFivesGuys(void) {
 	std::cout << "FragTrap " << name << " says high five!" << std::endl;
 }
+
+void FragTrap::attack(const std::string &target) {
+	if (hitPoints > 0 && energyPoints > 0) {
+		energyPoints--;
+		std::cout << "FragTrap " << name << " attacks " << target << ", causing " << attackDamage
+				  << " points of damage!" << std::endl;
+	}
+}

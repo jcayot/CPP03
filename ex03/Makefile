@@ -1,4 +1,4 @@
-NAME = fragTrap
+NAME = diamondTrap
 CC = c++
 CFLAGS = -std=c++11 -Wall -Wextra -Werror
 SRCS =  DiamondTrap.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp main.cpp

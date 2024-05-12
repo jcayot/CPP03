@@ -14,13 +14,14 @@ class DiamondTrap : public FragTrap, public ScavTrap {
 
 	public:
 		DiamondTrap();
-		DiamondTrap(const std::string &name);
-		DiamondTrap(const DiamondTrap &diamondTrap);
+		DiamondTrap(const std::string& name);
+		DiamondTrap(const DiamondTrap& diamondTrap);
 		~DiamondTrap();
 
-		DiamondTrap &operator=(const DiamondTrap &other);
+		DiamondTrap& operator=(const DiamondTrap &other);
 
 		void	whoAmI(void);
+		void	attack(const std::string &target);
 };
 
 
